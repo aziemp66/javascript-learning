@@ -6,8 +6,19 @@ let job = {
     place: "Remote",
     salary: 150000,
 };
-age = 28;
-let adultYears = age - 18;
+
+let adultYears;
+
+function calculateAdultYears() {
+    adultYears = age - 18;
+}
+
+calculateAdultYears();
+alert(adultYears);
+
+age = 45;
+calculateAdultYears();
+
 alert(adultYears);
 
 /* let userAge = 18;
