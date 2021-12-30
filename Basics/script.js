@@ -1,4 +1,4 @@
-let age = 18;
+let age = 30;
 let userName = "Azie";
 let hobbies = ["Gaming", "Heavy-Lifting", "Programming"];
 let job = {
@@ -6,9 +6,9 @@ let job = {
     place: "Remote",
     salary: 150000,
 };
-
-alert(hobbies[0]);
-alert(job.title);
+age = 28;
+let adultYears = age - 18;
+alert(adultYears);
 
 /* let userAge = 18;
 let greetingText = "Hi, I'm Azie!!!";
