@@ -10,16 +10,15 @@ let job = {
 let adultYears;
 
 function calculateAdultYears() {
-    adultYears = age - 18;
+    return age - 18;
 }
 
-calculateAdultYears();
-alert(adultYears);
+totalAdultYears = calculateAdultYears();
+alert(totalAdultYears);
 
 age = 45;
-calculateAdultYears();
-
-alert(adultYears);
+totalAdultYears = calculateAdultYears();
+alert(totalAdultYears);
 
 /* let userAge = 18;
 let greetingText = "Hi, I'm Azie!!!";
