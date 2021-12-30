@@ -11,14 +11,16 @@ function calculateAdultYears(userAge) {
     return userAge - 18;
 }
 
-alert(calculateAdultYears(age));
+console.log(calculateAdultYears(age));
 
-alert(calculateAdultYears(45));
+console.log(calculateAdultYears(45));
 
-/* let userAge = 18;
-let greetingText = "Hi, I'm Azie!!!";
-alert(greetingText);
-greetingText = "Hi, I am Melza!!!";
-alert(greetingText);
-alert("I am " + userAge + " Years old");
- */
+let person = {
+    name: "Max", //Property
+    greet() {
+        //Method
+        console.log("Hello!");
+    },
+};
+
+person.greet();
