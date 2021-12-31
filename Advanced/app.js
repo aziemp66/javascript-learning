@@ -22,3 +22,8 @@ firstH1element.remove();
 
 //Move HTML Elements
 firstParagraph.parentElement.append(firstParagraph);
+
+//InnerHTML
+console.log(firstParagraph.innerHTML);
+
+firstParagraph.innerHTML = "Hi this is <strong>Azie</strong>!";
