@@ -1,5 +1,4 @@
 // Exercise Time!
-
 // 1. Select the <h1> element by "drilling into the DOM" and
 //    save it in a variable with a name of your choice
 // 2. Use the variable from (1) and get access to the "parent"
@@ -13,3 +12,21 @@
 //    and store it in a new variable with a name of your choice
 // 5. BONUS TASK: Try changing the text content of the <p> element
 //    you selected in (4) and set it to any other text of your choice
+
+//Number 1
+
+let h1Title = document.body.children[0];
+console.dir(h1Title);
+
+//Number 2
+console.dir(h1Title.parentElement);
+console.dir(h1Title.nextElementSibling);
+
+//Number 3
+let h1TitleId = document.getElementById("title");
+
+//Number 4
+let Paragraphs = document.querySelector(".paragraphs");
+
+//Number 5
+Paragraphs.textContent = "Learning Advanced Javascript";
