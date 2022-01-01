@@ -1,13 +1,13 @@
-let productNameInput = document.getElementById("product-name");
-let productNameMaxLength = productNameInput.maxLength;
+const productNameInput = document.getElementById("product-name");
+const productNameMaxLength = productNameInput.maxLength;
 
-let remainingChars = document.getElementById("remaining-chars");
+const remainingChars = document.getElementById("remaining-chars");
 
 function updateRemainingCharacters() {
-    let enteredText = productNameInput.value;
-    let enteredTextLength = enteredText.length;
+    const enteredText = productNameInput.value;
+    const enteredTextLength = enteredText.length;
 
-    let remainingCharacters = productNameMaxLength - enteredTextLength;
+    const remainingCharacters = productNameMaxLength - enteredTextLength;
 
     remainingChars.textContent = remainingCharacters;
 }
