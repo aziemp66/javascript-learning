@@ -52,7 +52,7 @@ function destroyFunction() {
 destroyButton.addEventListener("click", destroyFunction);
 
 function blueFunction() {
-    blueParagraphs.classList.add("blue");
+    /* blueParagraphs.classList.add("blue"); */
     blueParagraphs.className = "blue";
 }
 blueButton.addEventListener("click", blueFunction);
