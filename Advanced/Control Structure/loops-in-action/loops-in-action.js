@@ -103,4 +103,4 @@ function deriveNumberOfDiceRolls() {
     outputTargetNumber.textContent = enteredNumber;
 }
 
-rollDiceButton.addEventListener("click", deriveNumberOfDiceRolls);
+rollDiceButton.addEventListener("click", rollDice);
