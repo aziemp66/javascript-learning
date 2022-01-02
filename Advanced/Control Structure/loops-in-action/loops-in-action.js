@@ -39,3 +39,25 @@ function highlightFunction() {
 highlightButton.addEventListener("click", highlightFunction);
 
 //Your Information
+const userDataButton = document.getElementById("user-data-button");
+
+const userDataInfo = {
+    Name: "Azie",
+    Age: "18",
+    Institution: "Sriwijaya University",
+};
+
+function userDataDisplay() {
+    const userDataOutput = document.getElementById("output-user-data");
+
+    userDataOutput.innerHTML = "";
+
+    for (const data in userDataInfo) {
+        const userDataListItem = document.createElement("li");
+        const outputText = data.toUpperCase() + " : " + userDataInfo[data];
+        userDataListItem.textContent = outputText;
+        userDataOutput.append(userDataListItem);
+    }
+}
+
+userDataButton.addEventListener("click", userDataDisplay);
