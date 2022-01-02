@@ -19,3 +19,23 @@ function calculateSum() {
 }
 
 calculateSumButton.addEventListener("click", calculateSum);
+
+//Highlight Links
+const highlightButton = document.getElementById("highlight-button");
+
+/* const allLinks = [
+    (firstLink = document.getElementById("first-link")),
+    (secondLink = document.getElementById("second-link")),
+    (thirdLink = document.getElementById("third-link")),
+]; */
+const allLinks = document.querySelectorAll("#highlight-links a");
+
+function highlightFunction() {
+    for (const link of allLinks) {
+        link.classList.add("highlight");
+    }
+}
+
+highlightButton.addEventListener("click", highlightFunction);
+
+//Your Information
